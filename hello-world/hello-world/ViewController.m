@@ -2,7 +2,6 @@
 //  ViewController.m
 //  hello-world
 //
-//  Created by Austin Ward on 1/22/17.
 //  Copyright © 2017 Tim Hung. All rights reserved.
 //
 
@@ -14,8 +13,14 @@
 
 @implementation ViewController
 
+- (IBAction)mainBtn:(id)sender {
+    mainLabel.text = @"Tim Hung";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    mainLabel.hidden = NO;
+    mainBtn.hidden = NO;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
