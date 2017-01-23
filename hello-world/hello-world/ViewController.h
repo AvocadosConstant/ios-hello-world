@@ -8,7 +8,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController {
-    IBOutlet UILabel *mainLabel;
+    IBOutlet UILabel *helloLabel;
+    IBOutlet UILabel *languageLabel;
+    IBOutlet UILabel *engLabel;
     IBOutlet UIButton *mainBtn;
 }
 
