@@ -105,14 +105,9 @@
 		F45FD1C21E35703700250678 /* hello-world */ = {
 			isa = PBXGroup;
 			children = (
-				F45FD1C61E35703700250678 /* AppDelegate.h */,
-				F45FD1C71E35703700250678 /* AppDelegate.m */,
 				F45FD1C91E35703700250678 /* ViewController.h */,
 				F45FD1CA1E35703700250678 /* ViewController.m */,
 				F45FD1CC1E35703700250678 /* Main.storyboard */,
-				F45FD1CF1E35703700250678 /* Assets.xcassets */,
-				F45FD1D11E35703700250678 /* LaunchScreen.storyboard */,
-				F45FD1D41E35703700250678 /* Info.plist */,
 				F45FD1C31E35703700250678 /* Supporting Files */,
 			);
 			path = "hello-world";
@@ -121,6 +116,11 @@
 		F45FD1C31E35703700250678 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F45FD1D11E35703700250678 /* LaunchScreen.storyboard */,
+				F45FD1CF1E35703700250678 /* Assets.xcassets */,
+				F45FD1D41E35703700250678 /* Info.plist */,
+				F45FD1C61E35703700250678 /* AppDelegate.h */,
+				F45FD1C71E35703700250678 /* AppDelegate.m */,
 				F45FD1C41E35703700250678 /* main.m */,
 			);
 			name = "Supporting Files";
