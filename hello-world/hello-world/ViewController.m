@@ -22,19 +22,19 @@
     index = 0;
 
     helloWorlds = @[
-        @"Hello, World", 	@"English",         @"",
-        @"¡Hola, Mundo!", 	@"Español",         @"Spanish",
-        @"Bonjour, le Monde!", 	@"Francais", 	@"French",
-        @"Hallo, Wereld!", 	@"Nederlandse",     @"Dutch",
-        @"Hallo, Welt!", 	@"Deutsch",         @"German",
-        @"Ciao, mondo!", 	@"Italiano",        @"Italian",
-        @"Salve, Munde", 	@"Latinae",         @"Latin",
-        @"Hej, världen!", 	@"Svenska",         @"Swedish",
-        @"Привет мир!", 	@"русский",         @"Russian",
-        @"Selam Dünya!", 	@"Türk",            @"Turkish",
-        @"你好，世界！",      @"中文",             @"Chinese",
-        @"नमस्ते दुनिया!",		@"हिंदी",              @"Hindi",
-        @"こんにちは世界！", 	@"日本語",           @"Japanese",
+        @"Hello, World", 	@"English",         @"",        @"uk.png",
+        @"¡Hola, Mundo!", 	@"Español",         @"Spanish", @"spain.jpg",
+        @"こんにちは世界！", 	@"日本語",           @"Japanese",  @"japan.png",
+        @"Привет мир!", 	@"русский",         @"Russian", @"russia.png",
+        @"Hallo, Welt!", 	@"Deutsch",         @"German",  @"germany.png",
+        @"你好，世界！",      @"中文",             @"Mandarin Chinese",  @"taiwan.png",
+        @"Salve, Munde", 	@"Latinae",         @"Latin",   @"rome.png",
+        @"Hej, världen!", 	@"Svenska",         @"Swedish", @"sweden.png",
+        @"Selam Dünya!", 	@"Türk",            @"Turkish", @"turkey.png",
+        @"Ciao, mondo!", 	@"Italiano",        @"Italian", @"italy.png",
+        @"Bonjour, le Monde!", 	@"Francais", 	@"French",  @"france.png",
+        @"नमस्ते दुनिया!",		@"हिंदी",              @"Hindi",    @"india.png",
+        @"Hallo, Wereld!", 	@"Nederlandse",     @"Dutch",   @"netherlands",
     ];
     helloLabel.hidden = NO;
     mainBtn.hidden = NO;
@@ -42,10 +42,17 @@
 
 - (IBAction)mainBtn:(id)sender {
     index++;
-    if(index >= [helloWorlds count] / 3) index = 0;
-    helloLabel.text = helloWorlds[index * 3];
-    languageLabel.text = helloWorlds[index * 3 + 1];
-    engLabel.text = helloWorlds[index * 3 + 2];
+    int cols = 4;
+    if(index >= [helloWorlds count] / cols) index = 0;
+    helloLabel.text = helloWorlds[index * cols];
+    languageLabel.text = helloWorlds[index * cols + 1];
+    engLabel.text = helloWorlds[index * cols + 2];
+
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed: helloWorlds[index * cols + 3]] drawInRect:self.view.bounds];
+    UIImage *flagImg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    flagView.image = flagImg;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,6 +12,7 @@
     IBOutlet UILabel *languageLabel;
     IBOutlet UILabel *engLabel;
     IBOutlet UIButton *mainBtn;
+    IBOutlet UIImageView *flagView;
 }
 
 - (IBAction)mainBtn:(id)sender;
