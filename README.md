@@ -1,15 +1,16 @@
-# Hello World, iOS Edition
+# Multilingual Hello, World, iOS Edition
 ###### CS 441 Program 01 @ Binghamton University
 
-This is a simple Hello World done for iOS in Objective-C. My project has a label that changes when a button is pressed.
+This is a simple Hello World done for iOS in Objective-C.
+
+The application cycles through the phrase "Hello, World!" in different languages of the world while displaying the flags of the countries the languages call home.
 
 ----
 
 ## TODO
 
-- Add flair
-  - Add color, graphics, etc
-  - Add more text for the label to change to
+- Fix some horizontal alignment issues
+- Improve design
 
 ----
 
