@@ -18,10 +18,10 @@
 }
 
 - (void)viewDidLoad {
+    // Do any additional setup after loading the view, typically from a nib.
     [super viewDidLoad];
     mainLabel.hidden = NO;
     mainBtn.hidden = NO;
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
